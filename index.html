@@ -445,6 +445,96 @@
     font-size: 0.95rem;
   }
 }
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-size: 1.1rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+}
+.map-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.map-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.map-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
   </style>
 </head>
@@ -700,7 +790,58 @@
               </form>
             </div>
           </div>
+          <section class="testimonials">
+            <div class="container">
+              <h2>What Our Customers Say</h2>
+              <div class="testimonial-grid">
+                <!-- Review 1 -->
+                <div class="testimonial">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D. - Central Pembroke Pines">
+                  <h4>John D.</h4>
+                  <p>"I had a great experience with United State Solutions. Their technician arrived on time, diagnosed my AC issue quickly, and had it fixed within the hour. Highly recommend to anyone in Central Pembroke Pines!"</p>
+                </div>
+          
+                <!-- Review 2 -->
+                <div class="testimonial">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria S. - Pembroke Lakes">
+                  <h4>Maria S.</h4>
+                  <p>"Fantastic HVAC service! We used them for a full system upgrade in our Pembroke Lakes home. Everything went smoothly and professionally. Great team, honest pricing."</p>
+                </div>
+          
+                <!-- Review 3 -->
+                <div class="testimonial">
+                  <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Kevin R. - Grand Palms">
+                  <h4>Kevin R.</h4>
+                  <p>"We had an emergency AC issue on a weekend and United State Solutions responded fast. They’re now my go-to for all HVAC needs in Grand Palms!"</p>
+                </div>
+          
+                <!-- Review 4 -->
+                <div class="testimonial">
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Laura M. - Walnut Creek">
+                  <h4>Laura M.</h4>
+                  <p>"Professional, responsive, and friendly. They cleaned our air ducts and helped with indoor air quality. My family feels the difference!"</p>
+                </div>
+              </div>
+            </div>
+          </section>          
 
+          <section class="map-section">
+            <div class="container">
+              <h2>📍 Our Service Area: Central Pembroke Pines</h2>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.2656226017915!2d-80.30886398514142!3d26.017304983526716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ac0a215c89e3%3A0x58f5c8c02a48c63d!2sCentral%20Pembroke%20Pines%2C%20Pembroke%20Pines%2C%20FL!5e0!3m2!1sen!2sus!4v1711994001234!5m2!1sen!2sus"
+                  width="100%"
+                  height="400"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+          
   <!-- Location / Map Section -->
 <div style="margin-top: 60px;">
     <h2 style="font-size: 1.5rem; margin-bottom: 16px;">📍 Visit United State Solutions</h2>
